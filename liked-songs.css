@@ -1,0 +1,329 @@
+/* Liked Songs Page Specific Styles */
+.liked-songs-header {
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 0;
+    gap: 30px;
+}
+
+.liked-songs-image {
+    width: 232px;
+    height: 232px;
+    background: linear-gradient(135deg, var(--burundi-red), var(--burundi-green));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--card-shadow);
+}
+
+.liked-songs-image i {
+    font-size: 80px;
+    color: white;
+}
+
+.liked-songs-info {
+    flex-grow: 1;
+}
+
+.liked-songs-info h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.liked-songs-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.liked-songs-meta {
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.separator {
+    margin: 0 8px;
+}
+
+.liked-songs-actions {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px;
+}
+
+.play-all-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.play-all-btn:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-color);
+}
+
+.shuffle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shuffle-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.liked-songs-controls {
+    margin-left: auto;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.songs-table {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 40px;
+}
+
+.table-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 50px 4fr 2fr 2fr 1fr;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-color);
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.song-row {
+    display: grid;
+    grid-template-columns: 50px 4fr 2fr 2fr 1fr;
+    padding: 10px 20px;
+    align-items: center;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.2s ease;
+    color: var(--text-color);
+}
+
+.song-row:hover {
+    background-color: var(--hover-bg);
+    border-top-color: var(--border-color);
+    border-bottom-color: var(--border-color);
+}
+
+.song-row:hover .hash {
+    display: none;
+}
+
+.song-row:hover .play-icon {
+    display: block;
+}
+
+.hash {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.play-icon {
+    display: none;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.song-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.song-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.song-artist {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.album, .date-added, .duration {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.more-like-this {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.more-like-this h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 16px;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.recommendation-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.recommendation-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .liked-songs-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .liked-songs-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .liked-songs-info h1 {
+        font-size: 36px;
+    }
+    
+    .header-row, .song-row {
+        grid-template-columns: 50px 4fr 2fr 1fr;
+    }
+    
+    .date-added, .header-cell.date-added, .song-cell.date-added {
+        display: none;
+    }
+    
+    .recommendation-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .liked-songs-info h1 {
+        font-size: 32px;
+    }
+    
+    .header-row, .song-row {
+        grid-template-columns: 50px 4fr 1fr;
+    }
+    
+    .album, .header-cell.album, .song-cell.album {
+        display: none;
+    }
+    
+    .recommendation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .liked-songs-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .liked-songs-image i {
+        font-size: 60px;
+    }
+    
+    .liked-songs-info h1 {
+        font-size: 28px;
+    }
+    
+    .play-all-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+}

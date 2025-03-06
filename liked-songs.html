@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Songs - Burundify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="liked-songs.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="https://picsum.photos/id/237/200/200" alt="Burundify Logo" class="logo-img">
+                <h1>Burundify</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="library.html"><i class="fas fa-book"></i> Your Library</a></li>
+                <li class="playlist-item"><a href="create-playlist.html"><i class="fas fa-plus-square"></i> Create Playlist</a></li>
+                <li class="active"><a href="liked-songs.html"><i class="fas fa-heart"></i> Liked Songs</a></li>
+            </ul>
+            <div class="sidebar-playlists">
+                <h3>PLAYLISTS</h3>
+                <ul>
+                    <li><a href="#">Burundi Hits</a></li>
+                    <li><a href="#">African Classics</a></li>
+                    <li><a href="#">Drumming Traditions</a></li>
+                    <li><a href="#">Chill Vibes</a></li>
+                    <li><a href="#">Party Mix</a></li>
+                </ul>
+            </div>
+            <div class="install-app">
+                <a href="#"><i class="fas fa-arrow-alt-circle-down"></i> Install App</a>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="navigation-buttons">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search in Liked Songs">
+                </div>
+                <div class="user-menu">
+                    <button class="profile-btn">
+                        <img src="https://picsum.photos/id/64/200/200" alt="Profile">
+                        <span>User Name</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="liked-songs-header">
+                <div class="liked-songs-image">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="liked-songs-info">
+                    <h4>PLAYLIST</h4>
+                    <h1>Liked Songs</h1>
+                    <div class="liked-songs-meta">
+                        <span class="user-name">User Name</span>
+                        <span class="separator">•</span>
+                        <span class="song-count">120 songs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="liked-songs-actions">
+                <button class="play-all-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="shuffle-btn">
+                    <i class="fas fa-random"></i>
+                </button>
+                <div class="liked-songs-controls">
+                    <button class="control-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="songs-table">
+                <div class="table-header">
+                    <div class="header-row">
+                        <div class="header-cell hash">#</div>
+                        <div class="header-cell title">TITLE</div>
+                        <div class="header-cell album">ALBUM</div>
+                        <div class="header-cell date-added">DATE ADDED</div>
+                        <div class="header-cell duration">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="table-body">
+                    <div class="song-row">
+                        <div class="song-cell hash">1</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1001/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Amahoro</div>
+                                    <div class="song-artist">Khadja Nin</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Samahani</div>
+                        <div class="song-cell date-added">2 days ago</div>
+                        <div class="song-cell duration">3:45</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">2</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1002/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Burundi Beat</div>
+                                    <div class="song-artist">Royal Drummers</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Rhythm of Life</div>
+                        <div class="song-cell date-added">1 week ago</div>
+                        <div class="song-cell duration">4:12</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">3</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1003/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Intore</div>
+                                    <div class="song-artist">Kidum</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Intore</div>
+                        <div class="song-cell date-added">2 weeks ago</div>
+                        <div class="song-cell duration">3:58</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">4</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1004/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">African Queen</div>
+                                    <div class="song-artist">Big Fizzo</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">African Queen</div>
+                        <div class="song-cell date-added">1 month ago</div>
+                        <div class="song-cell duration">4:05</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">5</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1005/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Ndakwanga</div>
+                                    <div class="song-artist">Sat-B</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Love Songs</div>
+                        <div class="song-cell date-added">1 month ago</div>
+                        <div class="song-cell duration">3:22</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">6</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1006/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Bujumbura</div>
+                                    <div class="song-artist">DJ Buja</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">City Lights</div>
+                        <div class="song-cell date-added">2 months ago</div>
+                        <div class="song-cell duration">3:50</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">7</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1008/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Kirundi Soul</div>
+                                    <div class="song-artist">Buja Stars</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Soul of Africa</div>
+                        <div class="song-cell date-added">3 months ago</div>
+                        <div class="song-cell duration">4:30</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">8</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1009/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Umutima</div>
+                                    <div class="song-artist">Kidum ft. Khadja Nin</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Collaborations</div>
+                        <div class="song-cell date-added">3 months ago</div>
+                        <div class="song-cell duration">5:12</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">9</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1010/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">Burundi Pride</div>
+                                    <div class="song-artist">National Ensemble</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Traditional Sounds</div>
+                        <div class="song-cell date-added">4 months ago</div>
+                        <div class="song-cell duration">6:18</div>
+                    </div>
+                    
+                    <div class="song-row">
+                        <div class="song-cell hash">10</div>
+                        <div class="song-cell title">
+                            <div class="song-info">
+                                <img src="https://picsum.photos/id/1011/60/60" alt="Song Cover">
+                                <div>
+                                    <div class="song-title">East African Sunrise</div>
+                                    <div class="song-artist">Kaze & Friends</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="song-cell album">Modern Fusion</div>
+                        <div class="song-cell date-added">5 months ago</div>
+                        <div class="song-cell duration">4:45</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-like-this">
+                <h2>More Like This</h2>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <img src="https://picsum.photos/id/1015/200/200" alt="Recommended Album">
+                        <h3>African Rhythms</h3>
+                        <p>Various Artists</p>
+                    </div>
+                    <div class="recommendation-card">
+                        <img src="https://picsum.photos/id/1016/200/200" alt="Recommended Album">
+                        <h3>Burundi Classics</h3>
+                        <p>Traditional Artists</p>
+                    </div>
+                    <div class="recommendation-card">
+                        <img src="https://picsum.photos/id/1018/200/200" alt="Recommended Album">
+                        <h3>East African Vibes</h3>
+                        <p>Regional Compilation</p>
+                    </div>
+                    <div class="recommendation-card">
+                        <img src="https://picsum.photos/id/1019/200/200" alt="Recommended Album">
+                        <h3>Modern Africa</h3>
+                        <p>Contemporary Artists</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Now Playing Bar -->
+        <footer class="now-playing-bar">
+            <div class="now-playing-left">
+                <img src="https://picsum.photos/id/21/80/80" alt="Now Playing" class="now-playing-cover">
+                <div class="now-playing-info">
+                    <h4>Amahoro</h4>
+                    <p>Khadja Nin</p>
+                </div>
+                <button class="like-btn"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="now-playing-center">
+                <div class="player-controls">
+                    <button class="control-btn"><i class="fas fa-random"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-forward"></i></button>
+                    <button class="control-btn"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="playback-bar">
+                    <span class="progress-time">1:23</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                            <div class="progress-handle"></div>
+                        </div>
+                    </div>
+                    <span class="total-time">3:45</span>
+                </div>
+            </div>
+            <div class="now-playing-right">
+                <button class="control-btn"><i class="fas fa-list"></i></button>
+                <button class="control-btn"><i class="fas fa-desktop"></i></button>
+                <div class="volume-container">
+                    <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                    <div class="volume-bar">
+                        <div class="volume-level"></div>
+                        <div class="volume-handle"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="background-animation"></div>
+    <script src="script.js"></script>
+    <script src="liked-songs.js"></script>
+</body>
+</html>

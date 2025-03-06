@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burundify - Music for Everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="https://picsum.photos/id/237/200/200" alt="Burundify Logo" class="logo-img">
+                <h1>Burundify</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="library.html"><i class="fas fa-book"></i> Your Library</a></li>
+                <li class="playlist-item"><a href="create-playlist.html"><i class="fas fa-plus-square"></i> Create Playlist</a></li>
+                <li><a href="liked-songs.html"><i class="fas fa-heart"></i> Liked Songs</a></li>
+            </ul>
+            <div class="sidebar-playlists">
+                <h3>PLAYLISTS</h3>
+                <ul>
+                    <li><a href="#">Burundi Hits</a></li>
+                    <li><a href="#">African Classics</a></li>
+                    <li><a href="#">Drumming Traditions</a></li>
+                    <li><a href="#">Chill Vibes</a></li>
+                    <li><a href="#">Party Mix</a></li>
+                </ul>
+            </div>
+            <div class="install-app">
+                <a href="#"><i class="fas fa-arrow-alt-circle-down"></i> Install App</a>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="navigation-buttons">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search for Artists, Songs, or Podcasts">
+                </div>
+                <div class="user-menu">
+                    <button class="profile-btn">
+                        <img src="https://picsum.photos/id/64/200/200" alt="Profile">
+                        <span>User Name</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2>Welcome to Burundify</h2>
+                    <p>Discover the rich musical heritage of Burundi and beyond</p>
+                    <button class="explore-btn">EXPLORE NOW</button>
+                </div>
+            </section>
+
+            <section class="recently-played">
+                <div class="section-header">
+                    <h2>Recently Played</h2>
+                    <a href="#" class="see-all">SEE ALL</a>
+                </div>
+                <div class="card-container">
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/1/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Burundi Rhythms</h3>
+                        <p>Traditional Drummers</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/2/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Modern Fusion</h3>
+                        <p>Kaze & Friends</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/3/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>East African Vibes</h3>
+                        <p>Various Artists</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/4/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Kirundi Soul</h3>
+                        <p>Buja Stars</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/5/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Dance Classics</h3>
+                        <p>DJ Bujumbura</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="made-for-you">
+                <div class="section-header">
+                    <h2>Made For You</h2>
+                    <a href="#" class="see-all">SEE ALL</a>
+                </div>
+                <div class="card-container">
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/6/200/200" alt="Playlist Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Daily Mix 1</h3>
+                        <p>Tailored for you</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/7/200/200" alt="Playlist Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Discover Weekly</h3>
+                        <p>New discoveries</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/8/200/200" alt="Playlist Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Release Radar</h3>
+                        <p>Latest releases</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/9/200/200" alt="Playlist Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Burundi Top 50</h3>
+                        <p>Most popular in Burundi</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/10/200/200" alt="Playlist Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Time Capsule</h3>
+                        <p>Songs you loved</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-artists">
+                <div class="section-header">
+                    <h2>Popular Artists</h2>
+                    <a href="#" class="see-all">SEE ALL</a>
+                </div>
+                <div class="card-container">
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="https://picsum.photos/id/11/200/200" alt="Artist">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Khadja Nin</h3>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="https://picsum.photos/id/12/200/200" alt="Artist">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Royal Drummers</h3>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="https://picsum.photos/id/13/200/200" alt="Artist">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Kidum</h3>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="https://picsum.photos/id/14/200/200" alt="Artist">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Big Fizzo</h3>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="https://picsum.photos/id/15/200/200" alt="Artist">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Sat-B</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-releases">
+                <div class="section-header">
+                    <h2>New Releases</h2>
+                    <a href="#" class="see-all">SEE ALL</a>
+                </div>
+                <div class="card-container">
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/16/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Sunrise</h3>
+                        <p>New Album • 2023</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/17/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Rhythm Nation</h3>
+                        <p>New Single • 2023</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/18/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Heritage</h3>
+                        <p>New EP • 2023</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/19/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Harmony</h3>
+                        <p>New Album • 2023</p>
+                    </div>
+                    <div class="music-card">
+                        <div class="card-img-container">
+                            <img src="https://picsum.photos/id/20/200/200" alt="Album Cover">
+                            <div class="play-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <h3>Vibration</h3>
+                        <p>New Single • 2023</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Now Playing Bar -->
+        <footer class="now-playing-bar">
+            <div class="now-playing-left">
+                <img src="https://picsum.photos/id/21/80/80" alt="Now Playing" class="now-playing-cover">
+                <div class="now-playing-info">
+                    <h4>Amahoro</h4>
+                    <p>Khadja Nin</p>
+                </div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="now-playing-center">
+                <div class="player-controls">
+                    <button class="control-btn"><i class="fas fa-random"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-forward"></i></button>
+                    <button class="control-btn"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="playback-bar">
+                    <span class="progress-time">1:23</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                            <div class="progress-handle"></div>
+                        </div>
+                    </div>
+                    <span class="total-time">3:45</span>
+                </div>
+            </div>
+            <div class="now-playing-right">
+                <button class="control-btn"><i class="fas fa-list"></i></button>
+                <button class="control-btn"><i class="fas fa-desktop"></i></button>
+                <div class="volume-container">
+                    <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                    <div class="volume-bar">
+                        <div class="volume-level"></div>
+                        <div class="volume-handle"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="background-animation"></div>
+    <script src="script.js"></script>
+</body>
+</html>
